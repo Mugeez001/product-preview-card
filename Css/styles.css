@@ -1,0 +1,146 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: 'Montserrat';
+}
+
+.container {
+ background-color: hsl(30, 38%, 92%);
+  
+}
+.main-preview {
+  padding: 10rem;
+  height: 100vh;
+}
+
+.product-preview {
+  max-width: 50em;
+  background-color: hsl(0, 0%, 100%);
+  display: flex;
+  box-shadow: 2px 5px 10px 5px rgba(0, 0, 0, .1);
+  text-align: start;
+  justify-content: center;
+  margin: 0 auto;
+  border-radius: 7px;
+  overflow: hidden;
+}
+
+.sub-preview {
+  margin: 2rem;
+  line-height: 1.2;
+  margin-left: 2rem;
+}
+
+.heading-1 {
+  margin: 2.5rem 0;
+  color:  hsl(212, 21%, 14%);
+  font-family: 'Fraunces';
+  font-weight: 700;
+  line-height: 1.2;
+  font-size: 2.5rem;
+}
+
+.heading-4 {
+  color: hsl(207, 7%, 70%);
+  letter-spacing: 2px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+
+.heading-paragraph {
+  color: hsl(212, 21%, 14%);
+  font-weight: 500;
+}
+
+.perfume-prices {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  display: flex;
+}
+
+span.price-1{
+  font-family: 'Fraunces';
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: hsl(158, 36%, 37%);
+}
+
+span.price-2 {
+  text-decoration-line: line-through;
+  color: hsl(207, 7%, 70%);
+  align-self: center;
+  margin-left: 1.2rem;
+}
+
+
+.perfume-image {
+ height: 40rem;
+ width: 50%;
+ border-radius: 7px 0px 0px 7px;
+}
+
+.btn {
+  border: none;
+  padding: 1rem 1rem;
+  width: 100%;
+  background-image: url(../images/icon-cart.svg);
+  background-position: 30%;
+  background-repeat: no-repeat;
+  background-color: hsl(158, 36%, 37%);
+  color: hsl(0, 0%, 100%);
+  border-radius: 5px;
+  margin-top: 1rem;
+  font-size: 10px;
+  font-family: 'Montserrat';
+  cursor: pointer;
+  transition: all .2s;
+  width: 100%;
+  box-shadow:  0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.btn:hover {
+  background-color: hsl(158, 66%, 30%);
+}
+
+
+@media  screen and (max-width: 43.75em) {
+
+  .main-preview {
+    height: 100%;
+  }
+   .product-preview {
+    display: flex;
+    flex-direction: column;
+    max-width: 35em;
+   }
+
+   .perfume-image {
+    width: 100%;
+    border-radius: 7px 0px 0px;
+   }
+
+   .heading-1 br {content: '';} 
+
+   .heading-1 {
+     font-size: 3rem;
+   }
+
+   .btn {
+       text-align: center;
+       margin-bottom: 2rem;
+       box-shadow: none;
+   }
+
+   .heading-paragraph {
+       font-size: 1.3rem;
+   }
+}
+
+
+
